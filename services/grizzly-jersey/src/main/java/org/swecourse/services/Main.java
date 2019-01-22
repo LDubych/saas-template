@@ -29,7 +29,7 @@ public class Main {
   private static final Optional < String > lstn;
   private static final Optional < String > port;
 
-  //public static Integer i = new Integer(123);
+  public static Integer a = new Integer(123);
   
   static {
     PROTOCOL = "http://";
@@ -38,7 +38,7 @@ public class Main {
     port = Optional.ofNullable(System.getenv("SERVICES_GJ_PORT"));
     BASE_URI = PROTOCOL + host.orElse("localhost") + ":" + port.orElse("80") + "/";
     LSTN_URI = PROTOCOL + lstn.orElse("0.0.0.0") + ":" + port.orElse("80");
-    //String uname = "steve";
+    String uname = "ste";
     //String password = "blue";
   }
 
